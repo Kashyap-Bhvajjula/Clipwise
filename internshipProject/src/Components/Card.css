@@ -1,0 +1,101 @@
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #cccccc60;
+  border-radius: 10px;
+  box-shadow: 0px 4px 50px 0px #0d00ff40;
+  overflow: hidden;
+  margin-left: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+  grid-template-rows: auto auto auto auto;
+  width: 322px;
+  height: 412px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 30px;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  border: 2px solid #cccccc;
+}
+
+.img-prod{
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 18%;
+}
+
+.prodImage {
+  width: 198px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  /* padding-left: 50px; */
+}
+
+.price {
+  color: #317189;
+}
+
+.buyButn {
+  margin: 30px 0;
+  padding: 10px 20px;
+  border: 2px solid #70b8fc;
+  border-radius: 18px;
+  background-color: transparent;
+  color: #70b8fc;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 500;
+  width: 180px;
+  height: 56px;
+  transition:  0.3s, transform 0.3s;
+}
+
+.buyButn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #75CCEB 0%, #6FB4FF 100%);
+  box-shadow: 0px 10px 25px 0px #70B8FB73;
+  color: white;
+}
+
+.button-container {
+  margin-top: 20px; /* Optional spacing */
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+}
+
+.custom-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none; /* Hide default arrow */
+  margin-right: 5px; /* Space between dropdown and icon */
+}
+
+.icon {
+  vertical-align: middle; /* Align icon with dropdown */
+  color: #31546d; /* Customize icon color if needed */
+  margin-left: -25px; /* Adjust based on layout */
+}
+
+/* .btn-class{
+  position: relative;
+  right: 28%;
+} */

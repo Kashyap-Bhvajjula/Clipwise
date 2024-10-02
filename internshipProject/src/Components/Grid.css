@@ -1,0 +1,77 @@
+body{
+    margin: none;
+    padding: none;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 35px; /* Keep vertical gap the same */
+    width: 100%;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    border: 2px solid #cccccc60;
+    border-radius: 10px;
+    box-shadow: 0px 4px 50px 0px #07035b1b;
+    overflow: hidden;
+    margin-left: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 322px;
+    height: 412px;
+    gap: 20px;
+    opacity: 0px;
+    border-radius: 30px;
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+    border: 2px solid #cccccc;
+    box-shadow: 0px 4px 50px 0px #07035b72;
+  }
+  
+  .prodImage {
+    width: 198px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .prodDesc {
+    color: #317189;
+  }
+  
+  .prodDesc > h3 {
+    font-size: 20px;
+  }
+  
+  .price {
+    color: #317189;
+    font-weight: 700;
+  }
+  
+  .button-container {
+    margin-top: 20px; /* Optional spacing */
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .custom-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Hide default arrow */
+    margin-right: 5px; /* Space between dropdown and icon */
+  }
+  
+  .icon {
+    vertical-align: middle; /* Align icon with dropdown */
+    color: #31546d; /* Customize icon color if needed */
+    margin-left: -25px; /* Adjust based on layout */
+  }
+  
